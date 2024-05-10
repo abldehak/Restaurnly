@@ -34,6 +34,10 @@ h2 ,h3, span{
   padding: 15px;
 }
 
+header h1 {
+  font-size: 3em;
+}
+
 header {
   background-color: #0f0f0f92;
   color: #fff;
@@ -46,82 +50,57 @@ header {
 }
 
 .navcont{
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .logo{
-text-align: center;
+  text-align: center;
 }
 .logo a {
-font-size: 25px;
-margin: 0;
-margin-left: 15px;
-padding: 0;
-line-height: 1;
-font-weight: 300;
-letter-spacing: 1px;
-text-transform: uppercase;
-font-family: "Poppins", sans-serif;
-text-decoration: none;
-color: white;
+  font-size: 25px;
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: white;
 }
 .logoimg img{
-width: 60px;
+  width: 60px;
 }
 .nav-links {
-  list-style-type: none;
-  display: flex;
-  margin-right: 400px;
-  margin-left: 200px;
-  
+    list-style-type: none;
+    display: flex;
+    margin-right: 400px;
+    margin-left: 200px;
+    
 }
 
 .nav-links li {
-  display: inline;
-  padding: 0px 40px;
-  margin-left: 20px;
+    display: inline;
+    padding: 0px 40px;
+    margin-left: 20px;
 }
 
 .nav-links li a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0,4s;
-  font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    transition: 0,4s;
+    font-family: "Poppins", sans-serif;
 }
 
 .nav-links li a:hover {
-  color: #cda45e;
-  font-size: 18px;
-  
+    color: #cda45e;
+    font-size: 19px;
+    
 }
 @media screen and (max-width: 910px) {
-header {
-  position: fixed;
-  padding-top: 0px;
-  margin-top: 0px;
-  
-}
-.navcont{
-  display: flex;
-  justify-content: center;
-  padding-left: 70px;
-}
-.logo{
-  display: none;
-}
-
-.nav-links li {
-display: inline;
-padding: 10px;
-
-
-}
-
-} 
-@media screen and (max-width: 768px) {
-header {
-    position: fixed;
+  header {
     padding-top: 0px;
     margin-top: 0px;
     
@@ -130,46 +109,82 @@ header {
 .nav-links {
   list-style-type: none;
   display: flex;
-  margin-right: 200px;
+  margin-right: 400px;
   margin-left: 40px;
 }
 .navcont{
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
 }
 .nav-links li {
   display: inline;
   padding: 10px;
-  margin-left: 20px;
   
 }
-.nav-links li a:hover {
- color: #cda45e;
- font-size: 15px;
+} 
 
-}
-
-}
 
 
 @media screen and (max-width: 768px) {
-.logo{
-  text-align: center;
-  display: none;
+  header {
+    position: fixed;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+  }
+  .navcont{
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+  }
+  .logo{
+    display: none;
+  }
+
+  .navcont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav-links li {
+    display: inline;
+    padding: 10px;
+    margin-left: 20px;
+    
 }
+  .nav-links li a:hover {
+  color: #cda45e;
+  font-size: 15px;
+  
+   }
 
 }
+
+
+@media screen and (max-width: 600px) {
+  .logo{
+    text-align: center;
+    display: none;
+  }
+
+}
+
 @media screen and (max-width: 500px) {
-.logoimg img{
-  text-align: center;
-  display: none;
-}
-.navcont{
-padding-left: 0px;
-}
+  .logoimg img{
+    text-align: center;
+    display: none;
+  }
+  .navcont{
+  padding-left: 0px;
+  }
+  .email {
+    width: 140px;
+  }
+}  
 
-}
+
+
 
 .textline:before {
   content: "";
@@ -245,6 +260,7 @@ padding-top: 30px;
    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
    gap: 20px;
 }
+
 .textline{
   margin: 0;
   height: 61vh;
@@ -356,6 +372,8 @@ padding-top: 30px;
   padding-bottom: 50px;
   padding-top: 50px;
 }
+
+
 @media screen and (max-width: 768px) {
   header {
     position: fixed;
@@ -363,39 +381,25 @@ padding-top: 30px;
     margin-top: 0px;
     
   }
-  .navcont{
-    display: flex;
-    justify-content: center;
-    padding-left: 70px;
-  }
-  .logo{
-    display: none;
-  }
 
 }
 
-@media screen and (max-width: 590px) {
-  .menu{
+ @media screen and (max-width: 520px) and ( min-width:430px) {
+  .menu .menu-items{
     display: flex;
-  }
-  .menu .menu-item{
-    margin-left: 50px;
-    width: 70%;
-  }
+    flex-wrap: wrap;
+
  }
  
-
- @media screen and (max-width: 540px) {
-  .menu{
-    display: flex;
-  }
-  .menu .menu-item{
-    margin:auto auto 0 0;
-    width: 70%;
-  }
  }
  
+ @media screen and (max-width: 430px){
+  .menu .menu-item{
+    width: 80%;
+  }
 
+
+ }
 footer{
   border-top:  #92999f 0.001em solid;
 }
