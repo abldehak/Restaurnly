@@ -186,7 +186,9 @@ header {
     text-align: center;
     display: none;
   }
-
+ .navcont{
+  padding-left: 0px;
+ }
 
 }
 
@@ -280,6 +282,11 @@ header {
     height: 100%;
     border: 4px solid rgba(255, 255, 255, 0.2);
     position: relative;
+  }
+}
+@media screen and (max-width: 500px){
+  .hero .row h2{
+    width: 300px;
   }
 }
 .sec {

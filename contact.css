@@ -170,6 +170,19 @@ header {
 
 }
 
+@media screen and (max-width: 500px) {
+  .logoimg img{
+    text-align: center;
+    display: none;
+  }
+  .navcont{
+  padding-left: 0px;
+  }
+  .email {
+    width: 140px;
+  }
+}  
+
 
 
 button {
